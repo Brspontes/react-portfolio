@@ -1,19 +1,30 @@
+import { Flex, Box, Button, useColorMode } from '@chakra-ui/react'
+import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 import './header.css'
 
 function Header () {
+  const { colorMode, toggleColorMode } = useColorMode()
   return (
-    <header className="header flex-center">
-      <div className='header-child'>
+    <Flex as='header' width="100%" maxWidth={1480} height="120" marginX="auto" marginTop="4" paddingX="6" align="center" justifyContent="space-between">
+      <Box>
         <p>BR.</p>
+      </Box>
+      <Flex direction="row-reverse">
         <nav>
           <ul>
             <li>Projetos</li>
             <li>Resume</li>
             <li>Contato</li>
+            <li>
+              {colorMode === 'light' ? 
+                <Button onClick={toggleColorMode}><MoonIcon /></Button> :
+                <Button onClick={toggleColorMode}><SunIcon /></Button>
+              }
+            </li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </Flex>  
+    </Flex>
   )
 }
 
