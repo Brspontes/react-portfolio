@@ -3,10 +3,31 @@
   -webkit-text-stroke-color: #000;
 }
 
+.directionFlex {
+  flex-direction: row;
+}
+
 /* CELULAR */
 @media screen and (max-device-width: 480px) {
   .bordaTexto {
     -webkit-text-stroke-width: 2px; 
     -webkit-text-stroke-color: #000;
   }
+
+  .directionFlex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .directionFlex > Button {
+    max-width: 150px;
+    margin-top: 0.5rem;
+  }
+}
+
+/* MID */
+@media screen and (min-width: 481px) and (max-width: 900px) {
+
 }
