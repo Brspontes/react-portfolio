@@ -8,7 +8,7 @@ function App() {
       <Text fontSize="1.2rem">
         Hello World, Eu sou
       </Text>
-      <Text fontSize={{ base: '3.5rem', md: '8rem', lg: '10.25rem' }}
+      <Text fontSize={{ base: '3rem', md: '8rem', lg: '10.25rem' }}
         className="bordaTexto"
         bgGradient='linear(to-l, #9845E8, #33D2FF, #DD5789)' bgClip='text' fontWeight='extrabold'>
         Brian Robert
