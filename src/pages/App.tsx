@@ -1,4 +1,5 @@
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, Text, Button } from '@chakra-ui/react';
+import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram, AiOutlineMail } from 'react-icons/ai'
 import React from 'react';
 import './App.css';
 
@@ -22,6 +23,12 @@ function App() {
           <br />
           Grande Abraço! 
         </Text>
+      </Flex>
+      <Flex mt={["10", "20", "40"]} className="directionFlex">
+        <Button leftIcon={<AiOutlineMail />} padding="6">Enviar Email</Button>
+        <Button leftIcon={<AiFillLinkedin />} padding="6" ml="2">LinkedIn</Button>
+        <Button leftIcon={<AiOutlineInstagram />} padding="6" ml="2">Instagram</Button>
+        <Button leftIcon={<AiFillGithub />} padding="6" ml="2">GitHub</Button>
       </Flex>
     </Flex>
   )
