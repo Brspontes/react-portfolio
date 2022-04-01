@@ -1,11 +1,12 @@
-.container {
-  min-width: 100vh;
-  min-height: 100vh;
-  
-  display: flex;
-  justify-content: center;
+.bordaTexto {
+  -webkit-text-stroke-width: 4px; 
+  -webkit-text-stroke-color: #000;
 }
 
-.container-child {
-  max-width: 840px;
+/* CELULAR */
+@media screen and (max-device-width: 480px) {
+  .bordaTexto {
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: #000;
+  }
 }

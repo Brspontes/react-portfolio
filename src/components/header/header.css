@@ -11,6 +11,6 @@ ul li {
 /* CELULAR */
 @media screen and (max-device-width: 480px) {
   ul li {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 }

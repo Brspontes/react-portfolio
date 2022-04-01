@@ -5,7 +5,7 @@ import './header.css'
 function Header () {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
-    <Flex as='header' width="100%" maxWidth={1480} height="120" marginX="auto" marginTop="4" paddingX="6" align="center" justifyContent="space-between">
+    <Flex as='header' width="100%" maxWidth={1480} height="120" marginX="auto" marginTop="4" paddingX="6" align="center" justifyContent="space-between" fontSize="1.2rem">
       <Box>
         <p>BR.</p>
       </Box>
