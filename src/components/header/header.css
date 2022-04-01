@@ -14,3 +14,11 @@ ul li {
     padding: 0.5rem;
   }
 }
+
+
+/* MID */
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  ul li {
+    padding: 1rem;
+  }
+}
