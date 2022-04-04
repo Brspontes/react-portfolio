@@ -1,0 +1,14 @@
+@media screen and (max-device-width: 480px) {
+  .hidden {
+    font-size: 0 !important;
+    width: 25px !important; 
+  }
+}
+
+/* MID */
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .hidden {
+    font-size: 0 !important;
+    width: 25px !important; 
+  }
+}
