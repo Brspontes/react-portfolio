@@ -1,5 +1,6 @@
-import { Flex, Text, Button,  useColorMode } from '@chakra-ui/react';
+import { Flex, Text, Button,  useColorMode, Image } from '@chakra-ui/react';
 import ButtonsProfiles from '../components/ButtonsProfiles'
+import ButtonWork from '../components/buttonWork';
 import React, { useState } from 'react';
 import './App.css';
 
@@ -37,22 +38,22 @@ function App() {
             <Flex direction="row" justifyContent="space-between">
               <ol className="experiencia">
                 <li id='will' className={expericiaSelecionadaAtual === 'will' ? "activeList" : "inactiveList"}>
-                  <Button _focus={{ outline: 0 }} width="250px" textAlign="left" bgColor="transparent" border="none" variant="link" onClick={() => setExperienciaAtual('will')} >Will Bank</Button>
+                  <ButtonWork imageLogo='will.png' setExperienciaAtual={setExperienciaAtual} textButton='Will Bank' textMethod='will' />
                 </li>
                 <li id='vortx' className={expericiaSelecionadaAtual === 'vortx' ? "activeList" : "inactiveList"}>
-                  <Button _focus={{ outline: 0 }} width="250px" textAlign="left" bgColor="transparent" border="none" variant="link" onClick={() => setExperienciaAtual('vortx')}>Vórtx</Button>
+                  <ButtonWork imageLogo='vortx.png' setExperienciaAtual={setExperienciaAtual} textButton='Vórtx' textMethod='vortx' />
                 </li>
                 <li id='funcao' className={expericiaSelecionadaAtual === 'funcao' ? "activeList" : "inactiveList"}>
-                  <Button _focus={{ outline: 0 }} width="250px" textAlign="left" bgColor="transparent" border="none" variant="link" onClick={() => setExperienciaAtual('funcao')}>Função Sistemas</Button>
+                  <ButtonWork imageLogo='funcao.png' setExperienciaAtual={setExperienciaAtual} textButton='Função Sistemas' textMethod='funcao' />
                 </li>
                 <li id='itau' className={expericiaSelecionadaAtual === 'itau' ? "activeList" : "inactiveList"}>
-                  <Button _focus={{ outline: 0 }} width="250px" textAlign="left" bgColor="transparent" border="none" variant="link" onClick={() => setExperienciaAtual('itau')}>Itaú-Unibanco</Button>
+                  <ButtonWork imageLogo='itau.png' setExperienciaAtual={setExperienciaAtual} textButton='Itaú-Unibanco' textMethod='itau' />
                 </li>
                 <li id='kcms' className={expericiaSelecionadaAtual === 'kcms' ? "activeList" : "inactiveList"}>
-                  <Button _focus={{ outline: 0 }} width="250px" textAlign="left" bgColor="transparent" border="none" variant="link" onClick={() => setExperienciaAtual('kcms')}>KCMS Intelligent Solutions</Button>
+                  <ButtonWork imageLogo='kcms.png' setExperienciaAtual={setExperienciaAtual} textButton='KCMS Intelligent Solutions' textMethod='kcms' />
                 </li>
                 <li id='flex' className={expericiaSelecionadaAtual === 'flex' ? "activeList" : "inactiveList"}>
-                  <Button _focus={{ outline: 0 }} width="250px" textAlign="left" bgColor="transparent" border="none" variant="link" onClick={() => setExperienciaAtual('flex')}>Flextronics Instituto de Tecnologia</Button>
+                  <ButtonWork imageLogo='fit.png' setExperienciaAtual={setExperienciaAtual} textButton='FIT - Instituto de Tecnologia' textMethod='flex' />
                 </li>
               </ol>
               <Flex mt="10">
