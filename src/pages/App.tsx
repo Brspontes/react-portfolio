@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   const [expericiaSelecionadaAtual, setExperienciaAtual] = useState("")
   const { colorMode } = useColorMode()
-  
+   
   return (
     <>
       <Flex direction="column">
