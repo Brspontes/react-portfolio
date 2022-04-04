@@ -1,5 +1,5 @@
 import { Flex, Text, useColorMode } from '@chakra-ui/react';
-import ButtonsProfiles from '../components/buttonsProfiles'
+import ButtonsProfiles from '../components/ButtonsProfiles'
 import ButtonWork from '../components/buttonWork';
 import React, { useState } from 'react';
 import './App.css';
