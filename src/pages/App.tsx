@@ -31,7 +31,7 @@ function App() {
           </Flex>
           <ButtonsProfiles />
         </Flex>
-        <Flex bgColor={colorMode === 'light' ? '#F5F5F5' : '#171c26'} mt='20'>
+        <Flex bgColor={colorMode === 'light' ? '#F5F5F5' : '#171c26'} mt='8'>
           <Flex width='100%' maxWidth={1480} marginX='auto' marginTop='4' paddingX='6' direction='column'>
             <ExperienceSection />
           </Flex>

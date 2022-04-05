@@ -1,14 +1,15 @@
-import { Flex, Text } from "@chakra-ui/react"
+import { Flex, Text, Box } from "@chakra-ui/react"
 import { useState } from "react"
 import { Experience } from '../../content/experience'
 import ButtonWork from "../buttonWork"
+import Skills from "../skills"
 
 function ExperienceSection () {
-  const [expericiaSelecionadaAtual, setExperienciaAtual] = useState('vortx')
+  const [expericiaSelecionadaAtual, setExperienciaAtual] = useState('will')
 
   return (
-  <Flex width='100%' maxWidth={1480} marginX='auto' marginTop='4' paddingX='6' direction='column'>
-    <Text mt='10' fontSize='1.2rem'>Experiência Profissional</Text>
+  <Flex width='100%' maxWidth={1480} direction='column'>
+    <Text mt='8' fontSize='1.4rem'>Experiência Profissional</Text>
     <Flex direction="row" justifyContent="space-between">
       <ol className="experiencia">
         <li id='will' className={expericiaSelecionadaAtual === 'will' ? 'activeList' : 'inactiveList'}>
@@ -30,19 +31,22 @@ function ExperienceSection () {
           <ButtonWork imageLogo='fit.png' setExperienciaAtual={setExperienciaAtual} textButton='FIT - Instituto de Tecnologia' textMethod='flex' />
         </li>
       </ol>
-      <Flex width="75%" ml={{ base: '10' }} mt='10' direction='column'>
-        <Flex direction={{ base: 'column', md: 'row', lg: 'row' }} justifyContent='space-between'>
-          <Text>Cargo: <strong>{ Experience.filter(c => c.CompanyNameFilter === expericiaSelecionadaAtual)[0].Occupation }</strong></Text>
-          <Text>Período: <strong>{ Experience.filter(c => c.CompanyNameFilter === expericiaSelecionadaAtual)[0].Period }</strong></Text>
+      <Flex width='75%' ml={{ base: '10' }} mt='10' direction={{ base: 'column', md: 'column', lg: 'row' }}>
+        <Flex minWidth='60%' direction='column'>
+          <Box>
+            <Text>Cargo: <strong>{ Experience.filter(c => c.CompanyNameFilter === expericiaSelecionadaAtual)[0].Occupation }</strong></Text>
+            <Text>Período: <strong>{ Experience.filter(c => c.CompanyNameFilter === expericiaSelecionadaAtual)[0].Period }</strong></Text>
+          </Box>
+          {
+            <ol className='atribuitions'>
+              { Experience.filter(c => c.CompanyNameFilter === expericiaSelecionadaAtual)
+                .map(c => c.Attribuitions.map(attr => {
+                  return <li>{attr}</li>
+                }))}
+            </ol>
+          }
         </Flex>
-        {
-          <ol className='atribuitions'>
-            { Experience.filter(c => c.CompanyNameFilter === expericiaSelecionadaAtual)
-              .map(c => c.Attribuitions.map(attr => {
-                return <li>{attr}</li>
-              }))}
-          </ol>
-        }
+        <Skills />
       </Flex>
     </Flex>
   </Flex>

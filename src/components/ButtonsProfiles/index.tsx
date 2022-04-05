@@ -4,7 +4,7 @@ import './buttonsProfiles.css'
 
 function ButtonsProfiles() {
   return (
-    <Flex mt={["10", "20", "40"]} className="directionFlex">
+    <Flex mt={["10", "20", "24"]} className="directionFlex">
     <Link href="mailto:brian.robert16@hotmail.com">
       <Button leftIcon={<AiOutlineMail />} padding="6" className="bordaBotao linear-gradient-roxo" borderRadius="sm">
         Enviar Email
