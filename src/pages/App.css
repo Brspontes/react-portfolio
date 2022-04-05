@@ -25,4 +25,11 @@
   background: none;
 }
 
+.atribuitions {
+  margin-top: 40px;
+  list-style: circle;
+}
 
+.atribuitions > li {
+  padding: 0.2rem;
+}

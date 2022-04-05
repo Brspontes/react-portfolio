@@ -1,11 +1,10 @@
 import { Flex, Text, useColorMode } from '@chakra-ui/react';
 import ButtonsProfiles from '../components/ButtonsProfiles'
-import ButtonWork from '../components/buttonWork';
-import React, { useState } from 'react';
+import ExperienceSection from '../components/experience/experience';
+import React from 'react';
 import './App.css';
 
 function App() {
-  const [expericiaSelecionadaAtual, setExperienciaAtual] = useState("")
   const { colorMode } = useColorMode()
    
   return (
@@ -32,37 +31,9 @@ function App() {
           </Flex>
           <ButtonsProfiles />
         </Flex>
-        <Flex bgColor={colorMode === "light" ? "#F5F5F5" : "#171c26"} mt="20">
-          <Flex width="100%" maxWidth={1480} marginX="auto" marginTop="4" paddingX="6" direction="column">
-          <Text mt="10" fontSize="1.2rem">Experiência Profissional</Text>
-            <Flex direction="row" justifyContent="space-between">
-              <ol className="experiencia">
-                <li id='will' className={expericiaSelecionadaAtual === 'will' ? "activeList" : "inactiveList"}>
-                  <ButtonWork imageLogo='will.png' setExperienciaAtual={setExperienciaAtual} textButton='Will Bank' textMethod='will' />
-                </li>
-                <li id='vortx' className={expericiaSelecionadaAtual === 'vortx' ? "activeList" : "inactiveList"}>
-                  <ButtonWork imageLogo='vortx.png' setExperienciaAtual={setExperienciaAtual} textButton='Vórtx' textMethod='vortx' />
-                </li>
-                <li id='funcao' className={expericiaSelecionadaAtual === 'funcao' ? "activeList" : "inactiveList"}>
-                  <ButtonWork imageLogo='funcao.png' setExperienciaAtual={setExperienciaAtual} textButton='Função Sistemas' textMethod='funcao' />
-                </li>
-                <li id='itau' className={expericiaSelecionadaAtual === 'itau' ? "activeList" : "inactiveList"}>
-                  <ButtonWork imageLogo='itau.png' setExperienciaAtual={setExperienciaAtual} textButton='Itaú-Unibanco' textMethod='itau' />
-                </li>
-                <li id='kcms' className={expericiaSelecionadaAtual === 'kcms' ? "activeList" : "inactiveList"}>
-                  <ButtonWork imageLogo='kcms.png' setExperienciaAtual={setExperienciaAtual} textButton='KCMS Intelligent Solutions' textMethod='kcms' />
-                </li>
-                <li id='flex' className={expericiaSelecionadaAtual === 'flex' ? "activeList" : "inactiveList"}>
-                  <ButtonWork imageLogo='fit.png' setExperienciaAtual={setExperienciaAtual} textButton='FIT - Instituto de Tecnologia' textMethod='flex' />
-                </li>
-              </ol>
-              <Flex mt="10">
-                Texto
-              </Flex>
-              <Flex mt="10">
-                Texto
-              </Flex>
-            </Flex>
+        <Flex bgColor={colorMode === 'light' ? '#F5F5F5' : '#171c26'} mt='20'>
+          <Flex width='100%' maxWidth={1480} marginX='auto' marginTop='4' paddingX='6' direction='column'>
+            <ExperienceSection />
           </Flex>
         </Flex>
       </Flex>
