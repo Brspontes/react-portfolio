@@ -10,26 +10,26 @@ function Skills () {
       <Text fontSize='1.4rem'>Skills</Text>
       <hr />
         <Flex wrap='wrap' mt={5} justifyContent='space-around'>
-          <SiReact size={40} />
-          <SiCsharp size={40} />
-          <SiDocker size={40} />
-          <SiNodedotjs size={40} />
-          <SiHtml5 size={40} />
+          <SiReact title='react' size={40} />
+          <SiCsharp title='csharp' size={40} />
+          <SiDocker title='docker' size={40} />
+          <SiNodedotjs title='node' size={40} />
+          <SiHtml5 title='html' size={40} />
         </Flex>
         <Flex wrap='wrap' mt={10} justifyContent='space-between'>
-          <SiAmazonaws size={40} />
-          <SiMicrosoftazure size={40} />
-          <SiJavascript size={40} />
-          <SiTypescript size={40} />
-          <SiMicrosoftsqlserver size={40} />
-          <SiPostgresql size={40} />
+          <SiAmazonaws title='aws' size={40} />
+          <SiMicrosoftazure title='azure' size={40} />
+          <SiJavascript title='javascript' size={40} />
+          <SiTypescript title='typescript' size={40} />
+          <SiMicrosoftsqlserver title='sql' size={40} />
+          <SiPostgresql title='postgress' size={40} />
         </Flex>
         <Flex wrap='wrap' mt={10} justifyContent='space-around'>
-          <SiAngular size={40} />
-          <SiGit size={40} />
-          <SiGithub size={40} />
-          <SiRabbitmq size={40} />
-          <SiVisualstudio size={40} />
+          <SiAngular title='angular' size={40} />
+          <SiGit title='git' size={40} />
+          <SiGithub title='github' size={40} />
+          <SiRabbitmq title='rabbitmq' size={40} />
+          <SiVisualstudio title='vs' size={40} />
         </Flex>
     </Flex>
   )
