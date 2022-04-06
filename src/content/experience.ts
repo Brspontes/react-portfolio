@@ -46,7 +46,7 @@ export const Experience: ExperienceType[] = [
   },
   {
     CompanyNameFilter: 'itau',
-    Occupation: 'Jr Analista de Engenheria de TI',
+    Occupation: 'JR Analista de Engenheria de TI',
     Attribuitions: [
       'Analise de Soluções',
       'Acompanhamento de projetos e2e',
@@ -59,7 +59,7 @@ export const Experience: ExperienceType[] = [
   },
   {
     CompanyNameFilter: 'kcms',
-    Occupation: 'Programador I',
+    Occupation: 'JR Programador',
     Attribuitions: [
       'Desenvolvimento backend .Net Core',
       'Desenvolvimento frontend Html5, CSS3, Bootstrap, Jquery',
@@ -70,7 +70,7 @@ export const Experience: ExperienceType[] = [
   },
   {
     CompanyNameFilter: 'flex',
-    Occupation: 'Jr Testador',
+    Occupation: 'JR Testador',
     Attribuitions: [
       'Testes de Segurança Elétrica',
       'Testes não funcionais',
