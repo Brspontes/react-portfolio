@@ -26,7 +26,9 @@
     "start": "react-scripts start ./src/pages/index.tsx",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docker-build": "docker build -f Dockerfile -t portfolio .",
+    "docker-run": "docker run --name portfolio-container -it -p 4000:3000 portfolio"
   },
   "eslintConfig": {
     "extends": [
