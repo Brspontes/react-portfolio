@@ -6,7 +6,7 @@ function Header () {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <Flex bgColor={colorMode === 'light' ? '#F5F5F5' : '#171c26'}>
-      <Flex as='header' width="100%" maxWidth={1480} height="120" marginX="auto" 
+      <Flex as='header' width="100%" maxWidth={1360} height="120" marginX="auto" 
         paddingX="6" align="center" justifyContent="space-between" fontSize={["1rem","1.2rem"]}>
           <Box>
             <p>BR.</p>
