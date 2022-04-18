@@ -3,6 +3,12 @@
   -webkit-text-stroke-color: #000;
 }
 
+.bordaTextoSub {
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: #000;
+}
+
+
 .experiencia {
   margin-top: 40px;
   list-style: none;

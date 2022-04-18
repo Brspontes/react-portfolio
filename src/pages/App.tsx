@@ -3,6 +3,7 @@ import ButtonsProfiles from '../components/ButtonsProfiles'
 import ExperienceSection from '../components/experience/experience';
 import React from 'react';
 import './App.css';
+import Education from '../components/education';
 
 function App() {
   const { colorMode } = useColorMode()
@@ -34,6 +35,7 @@ function App() {
         <Flex bgColor={colorMode === 'light' ? '#F5F5F5' : '#171c26'} mt='8'>
           <Flex width='100%' maxWidth={1360} marginX='auto' marginTop='4' paddingX='6' direction='column'>
             <ExperienceSection />
+            <Education />
           </Flex>
         </Flex>
       </Flex>

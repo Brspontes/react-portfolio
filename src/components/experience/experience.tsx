@@ -9,7 +9,10 @@ function ExperienceSection () {
 
   return (
   <Flex width='100%' maxWidth={1480} direction='column'>
-    <Text mt='8' fontSize='1.4rem'>Experiência Profissional</Text>
+    <Text mt='8' className="bordaTextoSub" 
+      bgGradient='linear(to bottom, #9845E8, #33D2FF, #DD5789)' 
+      bgClip='text' fontWeight='extrabold' 
+      fontSize='2.5rem'>Experiência Profissional</Text>
     <Flex direction="row" justifyContent="space-between">
       <ol className="experiencia">
         <li id='will' className={expericiaSelecionadaAtual === 'will' ? 'activeList' : 'inactiveList'}>
