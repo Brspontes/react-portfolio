@@ -7,7 +7,7 @@ export default function Footer() {
       <Flex width='64' justifyContent='space-between'>
         <Box><Link href='https://www.linkedin.com/in/brian-pontes-420675a4/'><AiFillLinkedin size='50'/></Link></Box>
         <Box><Link href='https://www.instagram.com/__brianrobert/'><AiOutlineInstagram size='50'/></Link></Box>
-        <Box><Link href='https://github.com/Brspontes'><AiOutlineMail size='50'/></Link></Box>
+        <Box><Link href='mailto:brian.robert16@hotmail.com'><AiOutlineMail size='50'/></Link></Box>
       </Flex>
     </Flex>
   )
