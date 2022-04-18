@@ -5,6 +5,7 @@ import App from './pages/App';
 import Header from './components/header';
 import {  ChakraProvider ,ColorModeScript  } from '@chakra-ui/react'
 import theme from './theme';
+import Footer from './components/footer';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +13,7 @@ ReactDOM.render(
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <Header />
       <App />
+      <Footer />
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById('root')
