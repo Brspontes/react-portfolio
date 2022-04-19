@@ -1,9 +1,10 @@
-import { Flex, Text, useColorMode } from '@chakra-ui/react';
+import { Flex, Text, useColorMode, Box } from '@chakra-ui/react';
 import ButtonsProfiles from '../components/ButtonsProfiles'
 import ExperienceSection from '../components/experience/experience';
 import React from 'react';
 import './App.css';
 import Education from '../components/education';
+import Card from '../components/card';
 
 function App() {
   const { colorMode } = useColorMode()
@@ -16,9 +17,9 @@ function App() {
             <Text fontSize="1.2rem">
               Hello World, Eu sou
             </Text>
-            <Text fontSize={{ base: '3rem', md: '8rem', lg: '10.25rem' }}
+            <Text fontSize={{ base: '3rem', md: '6rem', lg: '8rem' }}
               className="bordaTexto"
-              bgGradient='linear(to-l, #9845E8, #33D2FF, #DD5789)' bgClip='text' fontWeight='extrabold'>
+              bgGradient='linear(to bottom, #9845E8, #33D2FF)' bgClip='text' fontWeight='extrabold'>
               Brian Robert
             </Text>
             <Text textAlign="justify" lineHeight="200%">
@@ -33,9 +34,14 @@ function App() {
           <ButtonsProfiles />
         </Flex>
         <Flex bgColor={colorMode === 'light' ? '#F5F5F5' : '#171c26'} mt='8'>
-          <Flex width='100%' maxWidth={1360} marginX='auto' marginTop='4' paddingX='6' direction='column'>
+          <Flex width='100%' maxWidth={1360} marginX='auto' marginTop='4' paddingX='6' direction='column' paddingBottom='40'>
             <ExperienceSection />
             <Education />
+            <Flex justifyContent='space-between' width='100%' mt='10' direction='row' wrap='wrap'>
+                <Card />
+                <Card />
+                <Card />
+            </Flex>
           </Flex>
         </Flex>
       </Flex>
