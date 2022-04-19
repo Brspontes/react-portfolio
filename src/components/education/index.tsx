@@ -8,8 +8,8 @@ export default function Education() {
         bgGradient='linear(to bottom, #9845E8, #33D2FF, #DD5789)' 
         bgClip='text' fontWeight='extrabold' fontSize='2.5rem'>Educação</Text>
       <Flex direction={['column', 'column', 'row']} justifyContent='space-around'>
-        <Image mt='12' src='education.png' width='xl' />
-        <Flex ml='20' direction='column' justifyContent='space-around'>
+        <Image mt='12' src='education.png' width='lg' />
+        <Flex ml='18' direction='column' justifyContent='space-around'>
           <Box>
             <Text 
               fontWeight='bold' 
