@@ -1,10 +1,10 @@
-import { Flex, Text, useColorMode, Box } from '@chakra-ui/react';
+import { Flex, Text, useColorMode } from '@chakra-ui/react';
 import ButtonsProfiles from '../components/ButtonsProfiles'
 import ExperienceSection from '../components/experience/experience';
 import React from 'react';
 import './App.css';
 import Education from '../components/education';
-import Card from '../components/card';
+import Projects from '../components/projects';
 
 function App() {
   const { colorMode } = useColorMode()
@@ -37,11 +37,7 @@ function App() {
           <Flex width='100%' maxWidth={1360} marginX='auto' marginTop='4' paddingX='6' direction='column' paddingBottom='40'>
             <ExperienceSection />
             <Education />
-            <Flex justifyContent='space-between' width='100%' mt='10' direction='row' wrap='wrap'>
-                <Card />
-                <Card />
-                <Card />
-            </Flex>
+            <Projects />
           </Flex>
         </Flex>
       </Flex>
