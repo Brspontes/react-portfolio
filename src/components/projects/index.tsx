@@ -29,7 +29,7 @@ export default function Projects() {
 
   useEffect(() => {
     const cardPages = 3
-    setCards(projectsContent.slice((3 - (pageSelected * cardPages)), (pageSelected * cardPages)))
+    setCards(projectsContent.slice((pageSelected * cardPages) - cardPages, (pageSelected * cardPages)))
   }, [pageSelected])
   
 

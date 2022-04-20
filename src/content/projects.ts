@@ -41,5 +41,5 @@ export const projectsContent: Project[] = [
     Description: 'Projeto realizado para demonstrar experiência profissional, como se fosse um currículo online, desenvolvido com reactjs',
     Image: 'portfolio.png',
     Github: 'https://github.com/Brspontes/react-portfolio'
-  }
+  },
 ]
