@@ -21,7 +21,7 @@ export default function Education() {
             <Text><strong>Instituição:</strong> Universidade Paulista</Text>
             <Text><strong>Conclusão:</strong> Dezembro, 2016</Text>
           </Box>
-          <Box mt={{ base: '10', md: '0', lg: '0' }}>
+          <Box mt={{ base: '10', md: '5', lg: '5' }}>
             <Text 
               fontWeight='bold' 
               fontSize='1.2rem' 
@@ -32,7 +32,7 @@ export default function Education() {
             <Text><strong>Instituição:</strong> IGTI</Text>
             <Text><strong>Conclusão:</strong> Julho, 2022</Text>
           </Box>
-          <Box mt={{ base: '10',  md: '0', lg: '0' }}>
+          <Box mt={{ base: '10',  md: '5', lg: '5' }}>
             <Text 
               fontWeight='bold' 
               fontSize='1.2rem' 
