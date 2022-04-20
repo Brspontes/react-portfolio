@@ -34,7 +34,7 @@ function App() {
           <ButtonsProfiles />
         </Flex>
         <Flex bgColor={colorMode === 'light' ? '#F5F5F5' : '#171c26'} mt='8'>
-          <Flex width='100%' maxWidth={1360} marginX='auto' marginTop='4' paddingX='6' direction='column' paddingBottom='40'>
+          <Flex width='100%' maxWidth={1360} marginX='auto' marginTop='4' paddingX='6' direction='column' paddingBottom='24'>
             <ExperienceSection />
             <Education />
             <Projects />

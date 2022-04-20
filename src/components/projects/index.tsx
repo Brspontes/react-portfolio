@@ -48,7 +48,7 @@ export default function Projects() {
       <Flex mt='10' width='100%' justifyContent='center'>
         <Flex width='24' justifyContent='space-around'>
             {pagination.map(pg => {
-                return <Button onClick={() => setPageSeleted(pg)}>{pg}</Button>
+                return <Button border={pageSelected === pg ? '1px' : 'none'} onClick={() => setPageSeleted(pg)}>{pg}</Button>
               }) 
             }
         </Flex>
