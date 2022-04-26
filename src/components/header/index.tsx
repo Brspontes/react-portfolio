@@ -15,8 +15,8 @@ function Header () {
             <nav>
               <ul>
                 <li>Projetos</li>
-                <li>Resume</li>
-                <li>Contato</li>
+                <li>Experiência</li>
+                <li>Educação</li>
                 <li>
                   {colorMode === 'light' ? 
                     <Button onClick={toggleColorMode}><MoonIcon /></Button> :
