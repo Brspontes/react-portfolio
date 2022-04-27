@@ -3,7 +3,7 @@
 This project consists of being a personal portfolio to present projects and careers.
 The code is open source, it can be used by anyone who wants it and can be used as a basis for other personal projects by other developers.
 
-<h2>Technologies </h2>
+<h2>Technologies</h2>
 <div>
 	<center>
 		<img src="https://user-images.githubusercontent.com/14333695/161757136-3aaf674a-8ad4-4890-8eb4-021614e23d78.png" width="80px" height="80px" alt="react" />
