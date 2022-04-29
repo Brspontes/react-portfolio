@@ -7,7 +7,6 @@ function Header () {
   const { colorMode, toggleColorMode } = useColorMode()
   const [scrollPosition, setScrollPosition] = useState(0);
   const [percentageOpacity, setPercentageOpacity] = useState('100%')
-  const [colorMenu, setColorMenu] = useState('')
 
   const handleScroll = () => {
       const position = window.pageYOffset;
