@@ -6,7 +6,8 @@ import { useEffect, useState } from 'react';
 function Header () {
   const { colorMode, toggleColorMode } = useColorMode()
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [percentageOpacity, setPercentageOpacity] = useState('100&')
+  const [percentageOpacity, setPercentageOpacity] = useState('100%')
+  const [colorMenu, setColorMenu] = useState('')
 
   const handleScroll = () => {
       const position = window.pageYOffset;
@@ -22,7 +23,6 @@ function Header () {
   
   useEffect(() => {
       window.addEventListener('scroll', handleScroll, { passive: true });
-
       return () => {
           window.removeEventListener('scroll', handleScroll);
       };
@@ -38,9 +38,21 @@ function Header () {
           <Flex direction="row-reverse">
             <nav>
               <ul>
-                <li><Link href='#projects'>Projetos</Link></li>
-                <li><Link href='#experience'>Experiência</Link></li>
-                <li><Link href='#education'>Educação</Link></li>
+                <li>
+                  <Link href='#experience' color={(scrollPosition > 700 && scrollPosition < 1091) ? 'blue.700' : colorMode === 'light' ? 'rgb(26, 32, 44)' : 'rgba(255, 255, 255, 0.92)'}>
+                      Experiência
+                  </Link>
+                </li>
+                <li>
+                  <Link href='#education' color={(scrollPosition > 1091 && scrollPosition < 1780) ? 'blue.700' : colorMode === 'light' ? 'rgb(26, 32, 44)' : 'rgba(255, 255, 255, 0.92)'}>
+                    Educação
+                  </Link>
+                </li>
+                <li>
+                  <Link href='#projects' color={(scrollPosition > 1781) ? 'blue.700' : colorMode === 'light' ? 'rgb(26, 32, 44)' : 'rgba(255, 255, 255, 0.92)'}>
+                    Projetos
+                  </Link>
+                </li>
                 <li>
                   {colorMode === 'light' ? 
                     <Button onClick={toggleColorMode}><MoonIcon /></Button> :
