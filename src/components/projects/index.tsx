@@ -34,7 +34,7 @@ export default function Projects() {
   
 
   return (
-    <Flex direction='column' mt='24'>
+    <Flex id='projects' direction='column' mt='24'>
       <Text mt='8' className="bordaTextoSub" 
         bgGradient='linear(to bottom, #9845E8, #33D2FF, #DD5789)' 
         bgClip='text' fontWeight='extrabold' 

@@ -8,11 +8,11 @@ import Projects from '../components/projects';
 
 function App() {
   const { colorMode } = useColorMode()
-   
+  
   return (
     <>
       <Flex direction="column">
-        <Flex width="100%" maxWidth={1360} marginX="auto" marginTop="4" paddingX="6" direction="column">
+        <Flex width="100%" maxWidth={1360} marginX="auto" marginTop="40" paddingX="6" direction="column">
           <Flex direction="column">
             <Text fontSize="1.2rem">
               Hello World, Eu sou

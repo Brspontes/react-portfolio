@@ -2,7 +2,7 @@ import { Flex, Text, Image, Box } from "@chakra-ui/react";
 
 export default function Education() {
   return (
-    <Flex mt='16' direction='column'>
+    <Flex id='education' mt='16' direction='column'>
       <Text 
         className="bordaTextoSub" 
         bgGradient='linear(to bottom, #9845E8, #33D2FF, #DD5789)' 

@@ -8,7 +8,7 @@ function ExperienceSection () {
   const [expericiaSelecionadaAtual, setExperienciaAtual] = useState('will')
 
   return (
-  <Flex width='100%' maxWidth={1480} direction='column'>
+  <Flex id='experience' width='100%' maxWidth={1480} direction='column'>
     <Text mt='8' className="bordaTextoSub" 
       bgGradient='linear(to bottom, #9845E8, #33D2FF, #DD5789)' 
       bgClip='text' fontWeight='extrabold' 
