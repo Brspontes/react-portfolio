@@ -20,7 +20,7 @@ function App() {
             <Text fontSize={{ base: '3rem', md: '6rem', lg: '8rem' }}
               className="bordaTexto"
               bgGradient='linear(to bottom, #9845E8, #33D2FF)' bgClip='text' fontWeight='extrabold'>
-              Brian Robert
+              Brian Pontes
             </Text>
             <Text textAlign="justify" lineHeight="200%">
               Atualmente sou desenvolvedor Sênior no Will Bank, já atuo com tecnologia desde 2014, onde dei início a carreira e conforme os anos iam se passando o amor por essa área aumentava constantemente. 
