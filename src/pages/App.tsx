@@ -23,7 +23,7 @@ function App() {
               Brian Pontes
             </Text>
             <Text textAlign="justify" lineHeight="200%">
-              Atualmente sou desenvolvedor Sênior no Will Bank, já atuo com tecnologia desde 2014, onde dei início a carreira e conforme os anos iam se passando o amor por essa área aumentava constantemente. 
+              Atualmente sou desenvolvedor Sênior no Will Bank, já atuo com tecnologia desde 2014, onde dei início a carreira e conforme os anos iam se passando o interessa por essa área aumentava constantemente. 
               Já passei por algumas empresas, de todos os tamanhos, sou formado em Ciência da Computação e Pós Graduado em Arquitetura de Software e Soluções. Espero que encontre o que busca neste perfil e 
               caso queira se comunicar comigo, por gentileza utilize os botões de contato, logo abaixo. Caso queira jogar vídeo game, meu Id da PlayStation é <strong>Brspontes</strong>.
               <br />
