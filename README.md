@@ -14,13 +14,14 @@ The code is open source, it can be used by anyone who wants it and can be used a
 <h2>Project Description</h2>
 <p>This project uses the <strong><a href="https://pt-br.reactjs.org/">react</a></strong> framework together with <strong><a href="https://www.typescriptlang.org/">typescript</a></strong>, for styling the project uses the <strong><a href="https://chakra-ui.com/">chackra ui</a></strong> library, complemented with css</p>
 
-<p>To use the project, it is first necessary to install the dependencies<p>
+<p>To use the project, it is first necessary to install the dependencies.<p>
 
 ```bash
 npm install
 or
 yarn install
 ```
+
 <p>After the dependencies are installed, you must run the command below so that the project is executed and there can be interaction</p>
 
 ```bash
